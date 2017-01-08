@@ -4,7 +4,7 @@ DIR_LIB=$DIR_PROJECT/lib
 DIR_ALIAS=$DIR_PROJECT/aliases
 
 # Libraries
-for file in ($DIR_LIB/*.zsh $DIR_LIB/**/*.zsh); do
+for file in $DIR_LIB/*.zsh $DIR_LIB/**/*.zsh; do
     source $file
 done
 
