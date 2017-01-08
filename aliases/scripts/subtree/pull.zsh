@@ -1,11 +1,11 @@
 
+PULL_IDENTIFIER="(fetch)"
+
 git remote -v | while read line
 do
-    echo $line
-    if [[ $line == *"(fetch)" ]]
+    if [[ $line == *"${PULL_IDENTIFIER}" && $line != "origin"* ]]
     then
-        echo "*** Pulling $line"
-	git subtree pull --prefix=Apps/test --squash -m 'Merge $line into project' app-test $(git_current_branch)
-        echo "\n"
+        echo "*** Pulling ${line%$PULL_IDENTIFIER}"
+	git subtree pull --prefix=Apps/test --squash -m 'Merge $line into project' app-test ${git_current_branch}
     fi
 done
