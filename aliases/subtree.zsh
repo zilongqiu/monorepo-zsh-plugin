@@ -13,7 +13,4 @@ SCRIPTS="sh $DIR_ALIAS/scripts/subtree"
 
 alias slist="$SCRIPTS/list.zsh"
 alias spull="$SCRIPTS/pull.zsh"
-#alias spush=$SCRIPTS/push.sh
-#alias sco=$SCRIPTS/checkout.sh
-#alias scob=$SCRIPTS/checkoutb.sh
-#alias stag=$SCRIPTS/tag.sh
+alias spush="$SCRIPTS/push.zsh"
