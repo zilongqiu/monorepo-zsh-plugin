@@ -9,11 +9,11 @@ then
     return
 fi
 
-SUBTREE_LIB=$DIR_LIB/subtree
+SCRIPTS=$DIR_ALIAS/scripts/subtree
 
-alias slist=$SUBTREE_LIB/list.zsh
-#alias spull=$SUBTREE_LIB/pull.sh
-#alias spush=$SUBTREE_LIB/push.sh
-#alias sco=$SUBTREE_LIB/checkout.sh
-#alias scob=$SUBTREE_LIB/checkoutb.sh
-#alias stag=$SUBTREE_LIB/tag.sh
+alias slist=$SCRIPTS/list.zsh
+#alias spull=$SCRIPTS/pull.sh
+#alias spush=$SCRIPTS/push.sh
+#alias sco=$SCRIPTS/checkout.sh
+#alias scob=$SCRIPTS/checkoutb.sh
+#alias stag=$SCRIPTS/tag.sh
