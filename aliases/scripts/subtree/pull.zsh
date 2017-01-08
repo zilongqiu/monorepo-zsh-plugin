@@ -1,3 +1,4 @@
+# Update all local git subtrees projects
 
 PULL_IDENTIFIER="(fetch)"
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
